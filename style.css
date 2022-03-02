@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+input[type=text], input[type="password"]
+{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+
+}
+.container {
+    padding: 16px;
+    background-color: rgb(134, 191, 241);
+    width: 50%;
+    position: relative;
+    margin-left: 20%;
+  }
+ 
+  .signbtn, .cancelbtn{
+      width: 10%;
+      position: relative;
+      bottom: 50px;
+      right:0px;
+      float: right;
+
+
+  }
+  .container {
+      display: block;
+  }
+  .signbtn{
+      
+    background-color: rgb(86, 180, 86);
+  }
+  .cancelbtn{
+      background-color: rgb(224, 72, 72);
+  }
+  .log{
+      position:relative;
+      text-align: center;
+  }
+  .tex{
+      position: relative;
+      text-align: center;
+  }
