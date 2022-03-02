@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button type="button" onclick="myfunction()" id="show" style="color: white;background-color: green;"> show the form</button>
+    <div id="myID">
+    <form action="#">
+    <div class="container">
+    <h1 class="log">sign up</h1>
+    <p class="tex">please fill in this form to create an account</p>
+    <hr>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psword"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psword" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+
+    <p>agree to<a href="#" style="color:rgb(18, 65, 112)">Terms & Privacy</a></p>
+
+    <div class="clear">
+        <button type="button" onclick="document.getElementById('myID')" class="cancelbtn">cancel</button>
+        <button type="submit" class="signbtn">sign up</button>
+    </div>
+</hr>
+</div>
+</form>
+</div>
+
+<script>
+    function myfunction(){
+        var con=document.getElementById("myID");
+        if(con.style.display==="none"){
+            con.style.display="block";
+        }else{
+            con.style.display="none";
+        }
+    }
+</script>
+</body>
+</html>
